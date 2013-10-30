@@ -26,6 +26,12 @@ Check that all of the certs on all service endpoints validate.
 """
 import unittest
 
+import sys
+sys.path.append('/Users/pgregg/nosql-service')
+sys.path.append('/Users/pgregg/nosql-service/tests')
+sys.path.append('/Users/pgregg/nosql-service/tests/integration')
+sys.path.append('/Users/pgregg/nosql-service/tests/integration/dynamodb2')
+
 from tests.integration import ServiceCertVerificationTest
 
 import boto.dynamodb2
