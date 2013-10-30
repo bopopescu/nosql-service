@@ -33,7 +33,7 @@ sys.path.append('/Users/pgregg/nosql-service/tests')
 sys.path.append('/Users/pgregg/nosql-service/tests/integration')
 sys.path.append('/Users/pgregg/nosql-service/tests/integration/dynamodb2')
 
-from tests.unit import unittest
+import unittest
 from boto.dynamodb2 import exceptions
 from boto.dynamodb2.fields import HashKey, RangeKey, KeysOnlyIndex
 from boto.dynamodb2.items import Item
