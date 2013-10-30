@@ -43,5 +43,7 @@ Test
 From nosql-service directory:
 
 pip install mock
+pip install httpretty
+pip install sure
 
 python tests/integration/dynamodb2/test_highlevel.py

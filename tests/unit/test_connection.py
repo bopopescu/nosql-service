@@ -23,6 +23,12 @@ from __future__ import with_statement
 
 import os
 import urlparse
+import sys
+sys.path.append('/Users/pgregg/nosql-service')
+sys.path.append('/Users/pgregg/nosql-service/tests')
+sys.path.append('/Users/pgregg/nosql-service/tests/integration')
+sys.path.append('/Users/pgregg/nosql-service/tests/integration/dynamodb2')
+
 from tests.unit import unittest
 from httpretty import HTTPretty
 
