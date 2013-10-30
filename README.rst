@@ -17,7 +17,7 @@ nosql-service supports:
 
   * Amazon DynamoDB
 
-Works with Python 2.6.6 or greater
+Works with Python 2.6 or greater
 
 ************
 Installation
