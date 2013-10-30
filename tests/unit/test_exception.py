@@ -1,4 +1,4 @@
-from tests.unit import unittest
+import unittest
 
 from boto.exception import BotoServerError, S3CreateError, JSONResponseError
 
