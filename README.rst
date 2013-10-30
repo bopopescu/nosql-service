@@ -42,4 +42,6 @@ Test
 
 From nosql-service directory:
 
+pip install mock
+
 python tests/integration/dynamodb2/test_highlevel.py

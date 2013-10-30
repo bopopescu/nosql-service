@@ -27,6 +27,12 @@ from __future__ import with_statement
 
 import time
 
+import sys
+sys.path.append('/Users/pgregg/nosql-service')
+sys.path.append('/Users/pgregg/nosql-service/tests')
+sys.path.append('/Users/pgregg/nosql-service/tests/integration')
+sys.path.append('/Users/pgregg/nosql-service/tests/integration/dynamodb2')
+
 from tests.unit import unittest
 from boto.dynamodb2 import exceptions
 from boto.dynamodb2.fields import HashKey, RangeKey, KeysOnlyIndex
