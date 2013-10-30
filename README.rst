@@ -9,7 +9,7 @@ Released: 29-October-2013
 Introduction
 ************
 
-nosql-service interfaces to DynamoDB package on Amazon Web Services
+nosql-service interfaces to DynamoDB on Amazon Web Services
 
 nosql-service supports:
 
@@ -30,4 +30,8 @@ Install:
 	$ git clone https://github.com/pgplayfirst/nosql-service.git
 	$ cd nosql-service
 	$ python setup.py install
-
+	$ vim ~/.boto
+	
+	[Credentials]
+	aws_access_key_id = <access_key_here>
+	aws_secret_access_key = <secret_key_here>
