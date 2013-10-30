@@ -24,7 +24,6 @@ import logging
 import sys
 sys.path.append('/Users/pgregg/nosql-service')
 sys.path.append('/Users/pgregg/nosql-service/tests')
-sys.path.append('/Users/pgregg/nosql-service/tests/unit')
 sys.path.append('/Users/pgregg/nosql-service/tests/integration')
 sys.path.append('/Users/pgregg/nosql-service/tests/integration/dynamodb2')
 
