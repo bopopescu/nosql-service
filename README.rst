@@ -1,7 +1,7 @@
 ####
 nosql-service
 ####
-extracted from Amazon's Boto version 2.13.3
+Extracted from Amazon's Boto version 2.13.3
 
 Released: 29-October-2013
 
@@ -9,7 +9,7 @@ Released: 29-October-2013
 Introduction
 ************
 
-nosql-service interfaces to DynamoDB on Amazon Web Services
+nosql-service interfaces to DynamoDB v2 on Amazon Web Services
 
 nosql-service supports:
 
@@ -35,3 +35,11 @@ Install:
 	[Credentials]
 	aws_access_key_id = <access_key_here>
 	aws_secret_access_key = <secret_key_here>
+
+************
+Test
+************
+
+From nosql-service directory:
+
+python tests/integration/dynamodb2/test_highlevel.py
