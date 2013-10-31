@@ -51,4 +51,35 @@ class nosql_service:
         
         return json.dumps(name + " table deleted")
 
+    # future syntax
+    @expose
+    def pf_ddb_create_table(self, name):
+        # creating a full table with all options specified.
+        users = Table.create(name, schema=[
+            HashKey('username'),
+            RangeKey('friend_count', data_type=NUMBER)
+        ], throughput={
+            'read': 5,
+            'write': 5,
+        }, indexes=[
+            KeysOnlyIndex('LastNameIndex', parts=[
+                HashKey('username'),
+                RangeKey('last_name')
+            ]),
+        ])
+
+        # Wait for it.
+        time.sleep(60)
+        
+        return json.dumps(name + " table created")
+
+    @expose
+    def pf__ddb_delete_table(self, name):
+        Table(name).delete
+        
+        # Wait for it.
+        time.sleep(60)
+        
+        return json.dumps(name + " table deleted")
+
 cherrypy.quickstart(nosql_service())
