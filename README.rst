@@ -47,7 +47,7 @@ Install:
 Start:
 	python nosql_service-cherry.py
 	
-When running this is the view in a separate terminal window:
+When running this is the view in a separate shell window:
 "[31/Oct/2013:15:37:51] ENGINE Listening for SIGHUP.
 [31/Oct/2013:15:37:51] ENGINE Listening for SIGTERM.
 [31/Oct/2013:15:37:51] ENGINE Listening for SIGUSR1.
