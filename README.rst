@@ -38,6 +38,16 @@ File contents:
 	aws_secret_access_key = <secret_key_here>
 
 ************
+Web server
+************
+
+Install:
+	pip install cherrypy
+	
+Start:
+	python nosql_service-cherry.py
+	
+************
 Tests
 ************
 

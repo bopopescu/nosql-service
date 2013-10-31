@@ -38,4 +38,9 @@ class nosql_service:
         ])
         return json.dumps(name + " table created")
 
+    @expose
+    def pf_delete_table(self, name):
+        Table(name).delete
+        return json.dumps(name + " table deleted")
+
 cherrypy.quickstart(nosql_service())
