@@ -54,12 +54,11 @@ python tests/unit/test_connection.py
 Yields:
 
 "http_proxy environment variable does not specify a port, using default
-.................
-----------------------------------------------------------------------
+
 Ran 18 tests in 0.232s
 
 OK"
 
-Create a users table on the DynamoDB Amazon instance for the chosen region:
+Create a users table on the credentialed DynamoDB Amazon instance for the chosen region:
 
 python tests/createtable_test.py
