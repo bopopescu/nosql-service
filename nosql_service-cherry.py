@@ -36,11 +36,19 @@ class nosql_service:
                 RangeKey('last_name')
             ]),
         ])
+        
+        # Wait for it.
+        time.sleep(60)
+        
         return json.dumps(name + " table created")
 
     @expose
     def pf_delete_table(self, name):
         Table(name).delete
+        
+        # Wait for it.
+        time.sleep(60)
+        
         return json.dumps(name + " table deleted")
 
 cherrypy.quickstart(nosql_service())
