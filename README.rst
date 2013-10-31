@@ -47,6 +47,19 @@ Install:
 Start:
 	python nosql_service-cherry.py
 	
+When running this is the view in a separate terminal window:
+"[31/Oct/2013:15:37:51] ENGINE Listening for SIGHUP.
+[31/Oct/2013:15:37:51] ENGINE Listening for SIGTERM.
+[31/Oct/2013:15:37:51] ENGINE Listening for SIGUSR1.
+[31/Oct/2013:15:37:51] ENGINE Bus STARTING
+CherryPy Checker:
+The Application mounted at '' has an empty config.
+
+[31/Oct/2013:15:37:51] ENGINE Started monitor thread '_TimeoutMonitor'.
+[31/Oct/2013:15:37:51] ENGINE Started monitor thread 'Autoreloader'.
+[31/Oct/2013:15:37:52] ENGINE Serving on 127.0.0.1:8080
+[31/Oct/2013:15:37:52] ENGINE Bus STARTED"
+	
 ************
 Tests
 ************
