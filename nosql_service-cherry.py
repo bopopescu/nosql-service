@@ -74,7 +74,7 @@ class nosql_service:
         return json.dumps(name + " table created")
 
     @expose
-    def pf__ddb_delete_table(self, name):
+    def pf_ddb_delete_table(self, name):
         Table(name).delete
         
         # Wait for it.

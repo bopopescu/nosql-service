@@ -85,3 +85,19 @@ OK"
 Create a users table on the credentialed DynamoDB Amazon instance for the chosen region:
 
 python tests/createtable_test.py
+
+************
+Usage
+************
+
+Delete DynamoDB table:
+
+http://localhost:8080/pf_ddb_delete_table?name=ddx
+
+60 seconds to complete operation
+
+Create DynamoDB table:
+
+http://localhost:8080/pf_ddb_create_table?name=ddx
+
+60 seconds to complete operation
