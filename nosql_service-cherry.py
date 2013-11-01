@@ -82,4 +82,30 @@ class nosql_service:
         
         return json.dumps(name + " table deleted")
 
+    @expose
+    def pf_ddb_put_item(self, name):
+
+        Table(name).put_item(data={
+            'username': 'johndoe',
+            'first_name': 'John',
+            'last_name': 'Doe',
+            'friend_count': 4
+        })
+
+        # Wait for it.
+        time.sleep(5)
+        
+        return json.dumps(name + " put_item")
+
+    @expose
+    def pf_ddb_delete_item(self, name):
+        
+        johndoe = Table(name).get_item(username='johndoe', friend_count=4)
+        johndoe.delete()
+        
+        # Wait for it.
+        time.sleep(5)
+        
+        return json.dumps(name + " delete_item")
+
 cherrypy.quickstart(nosql_service())
